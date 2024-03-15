@@ -6,6 +6,8 @@ import RecipesCards from './Components/Recipes/RecipesCards'
 import RecipesHeader from './Components/Recipes/RecipesHeader'
 import Navbar from './Navbar'
 import Cart from './Components/Cart/Cart'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
@@ -14,7 +16,13 @@ function App() {
   const handleCart = (recipe) =>{
     // console.log("add cart",recipe);
     const newCart = [...carts ,recipe]
-    setCarts(newCart);
+    const allCartsExist = carts.find(c => c.recipe_id == recipe.recipe_id);
+    if(!allCartsExist){
+      setCarts(newCart);
+      toast.success("Recipie added successfully!");
+    }else{
+      toast.warn("Allready selected!!");
+    }
   }
   // console.log(carts);
 
@@ -34,6 +42,7 @@ function App() {
                 <p>Name</p>
                 <p>Time</p>
                 <p>Calories</p>
+                <p></p>
             </div>
             
         </div>
@@ -44,7 +53,9 @@ function App() {
 
       </div>
       </div>
+      <ToastContainer />
       </div>
+      
     </>
   )
 }
