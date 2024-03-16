@@ -8,6 +8,7 @@ import Navbar from './Navbar'
 import Cart from './Components/Cart/Cart'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
+import CurrentCookingCart from './Components/Cart/CurrentCookingCart'
 
 function App() {
   const [carts , setCarts] = useState([]);
@@ -22,6 +23,18 @@ function App() {
       toast.warn("Allready selected!!");
     }
   }
+
+  const [currentCart , setCurrentCart] = useState([])
+  const handleCurrentCart = (cart,recipe_id) =>{
+    // console.log('current Cart',cart)
+    const removeCart = carts.filter(cart =>cart.recipe_id !== recipe_id)
+    console.log(removeCart)
+    const newCart = [...currentCart ,cart]
+    setCurrentCart(newCart);
+    toast.success("Preparing your food!");
+    setCarts(removeCart);
+  }
+  console.log(currentCart);
   
   // console.log(carts);
 
@@ -47,18 +60,25 @@ function App() {
         </div>
 
               {
-                carts.map(cart => <Cart key={cart.id} cart={cart}></Cart>)
+                carts.map(cart => <Cart key={cart.id} cart={cart}
+                  handleCurrentCart={handleCurrentCart}></Cart>)
               }
-              <div className='p-[32px]'>
-                <h1 className='text-center text-[24px] font-bold mt-7 mb-[16px]'>Currently cooking: </h1>
-                <hr/>
-                <div className="flex justify-between lg:gap-[100px] text-[#878787] mt-[24px] font-bold">
+              <div className="p-[32px]">
+            <h1 className="text-center text-[24px] font-bold mb-[16px]">Want to cook: 0{carts.length}</h1>
+            <hr />
+            <div className="flex justify-between lg:gap-[100px] text-[#878787] mt-[24px] font-bold">
                 <p>Name</p>
                 <p>Time</p>
                 <p>Calories</p>
                 <p></p>
             </div>
-              </div>
+            
+        </div>
+        {
+                  currentCart.map((current,idx) => <CurrentCookingCart key={idx} current={current}></CurrentCookingCart>)
+                }
+               
+             
       </div>
 
       </div>
