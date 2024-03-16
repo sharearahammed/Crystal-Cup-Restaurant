@@ -4,7 +4,7 @@ const Navbar = () => {
         
             <div className="navbar bg-base-100 mt-5 lg:mt-[54px] flex flex-col lg:flex-row">
   <div className="flex-1 mb-4 lg:mb-0">
-    <a className="btn btn-ghost text-2xl font-bold">Recipe Calories</a>
+    <a className="text-3xl font-bold">Crystal Cup</a>
     
   </div>
   <div className="flex-1 gap-6 text-[#150B2BB3] mb-4 lg:mb-0">
