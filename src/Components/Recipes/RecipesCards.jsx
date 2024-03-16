@@ -15,7 +15,6 @@ const RecipesCards = ({handleCart}) => {
             {
                 recipes.map(recipe => <RecipesCard key={recipe.recipe_id}
                     recipe={recipe}
-                    recipes={recipes}
                     handleCart={handleCart}></RecipesCard>)
             }
             
@@ -25,7 +24,7 @@ const RecipesCards = ({handleCart}) => {
 
 
 RecipesCards.propTypes = {
-    handleCart: PropTypes.func.isRequired
+    handleCart: PropTypes.func
 }
 
 export default RecipesCards;

@@ -10,9 +10,7 @@ import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
-
   const [carts , setCarts] = useState([]);
-
   const handleCart = (recipe) =>{
     // console.log("add cart",recipe);
     const newCart = [...carts ,recipe]
@@ -24,6 +22,7 @@ function App() {
       toast.warn("Allready selected!!");
     }
   }
+  
   // console.log(carts);
 
   return (
@@ -50,8 +49,18 @@ function App() {
               {
                 carts.map(cart => <Cart key={cart.id} cart={cart}></Cart>)
               }
-
+              <div className='p-[32px]'>
+                <h1 className='text-center text-[24px] font-bold mt-7 mb-[16px]'>Currently cooking: </h1>
+                <hr/>
+                <div className="flex justify-between lg:gap-[100px] text-[#878787] mt-[24px] font-bold">
+                <p>Name</p>
+                <p>Time</p>
+                <p>Calories</p>
+                <p></p>
+            </div>
+              </div>
       </div>
+
       </div>
       <ToastContainer />
       </div>

@@ -33,7 +33,7 @@ const RecipesCard = ({recipe,handleCart}) => {
                         </div>
                     </div>
                     <div className= "justify-start mt-[24px]">
-                        <button onClick={()=>handleCart(recipe,recipe_name,preparing_time,calories)} className="btn btn-primary bg-[#0BE58A] border-2 border-[#0BE58A] text-[#150B2B]">Want to Cook</button>
+                        <button onClick={()=>handleCart(recipe)} className="btn btn-primary bg-[#0BE58A] border-2 border-[#0BE58A] text-[#150B2B]">Want to Cook</button>
                     </div>
                 </div>
             </div>
@@ -43,7 +43,6 @@ const RecipesCard = ({recipe,handleCart}) => {
 
 RecipesCard.propTypes = {
     recipe: PropTypes.object.isRequired,
-    recipes: PropTypes.array.isRequired,
     handleCart: PropTypes.func.isRequired
 }
 
