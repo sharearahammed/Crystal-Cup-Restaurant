@@ -17,7 +17,7 @@ function App() {
   const handleCart = (recipe) => {
     // console.log("add cart",recipe);
     const newCart = [...carts, recipe];
-    console.log(newCart);
+    // console.log(newCart);
     const allCartsExist = carts.find((c) => c.recipe_id == recipe.recipe_id);
     if (!allCartsExist) {
       setCarts(newCart);
@@ -58,21 +58,23 @@ function App() {
               <div className="text-center flex justify-between lg:gap-[100px] text-[#878787] mt-[24px] font-bold">
                 <table>
                   <div className="flex flex-col">
-                    <tr className="flex justify-between text-[#878787] gap-20 mt-[24px] font-bold">
+                    <tr className="flex justify-between text-[#878787] lg:gap-20 mt-[24px] font-bold">
                       <th>Name</th>
                       <th>Time</th>
                       <th>Calories</th>
                       <th></th>
                     </tr>
 
-                    {carts.map((cart,idx) => (
-                      <Cart
-                        key={idx}
-                        index={idx}
-                        cart={cart}
-                        handleCurrentCart={handleCurrentCart}
-                      ></Cart>
-                    ))}
+                    <div>
+                      {carts.map((cart, idx) => (
+                        <Cart
+                          key={idx}
+                          index={idx}
+                          cart={cart}
+                          handleCurrentCart={handleCurrentCart}
+                        ></Cart>
+                      ))}
+                    </div>
                   </div>
                 </table>
               </div>
@@ -86,7 +88,7 @@ function App() {
               <div className="text-center flex justify-between lg:gap-[100px] text-[#878787] mt-[24px] font-bold">
                 <table>
                   <div className="flex flex-col">
-                    <tr className="flex justify-between text-[#878787] gap-20 mt-[24px] font-bold">
+                    <tr className="flex justify-between text-[#878787] lg:gap-20 mt-[24px] font-bold">
                       <th>Name</th>
                       <th>Time</th>
                       <th>Calories</th>
@@ -94,22 +96,20 @@ function App() {
                     </tr>
 
                     {currentCart.map((current, idx) => (
-              <CurrentCookingCart
-                key={idx}
-                index={idx}
-                current={current}
-              ></CurrentCookingCart>
-            ))}
+                      <CurrentCookingCart
+                        key={idx}
+                        index={idx}
+                        current={current}
+                      ></CurrentCookingCart>
+                    ))}
                   </div>
                 </table>
               </div>
             </div>
-            
           </div>
         </div>
 
         <ToastContainer />
-        
       </div>
       <Footer></Footer>
     </>
