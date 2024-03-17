@@ -1,57 +1,86 @@
 [
-    {
-      "recipe_id": 1,
-      "recipe_name": "Grilled Chicken Teriyaki",
-      "recipe_image": "https://i.ibb.co/bdt1CVH/grilled-chicken-teriyaki-rice-gray-background-generated-ai-653623-3792.jpg",
-      "short_description": "Delicious grilled chicken marinated in teriyaki sauce.",
-      "ingredients": ["550 g chicken", "120 ml soy sauce", "200 g basil leaf", "400 g mushroom"],
-      "preparing_time": "30 min",
-      "calories": "320 calories"
-    },
-    {
-      "recipe_id": 2,
-      "recipe_name": "Vegetable Stir-Fry",
-      "recipe_image": "https://i.ibb.co/vhPM7Kv/Vegetable-Stir-Fry.jpg",
-      "short_description": "A healthy and flavorful mix of fresh vegetables.",
-      "ingredients": ["300 g broccoli", "200 g carrots", "150 g bell peppers", "100 g snap peas"],
-      "preparing_time": "25 min",
-      "calories": "180 calories"
-    },
-    {
-      "recipe_id": 3,
-      "recipe_name": "Spaghetti Carbonara",
-      "recipe_image": "https://i.ibb.co/B3FgFNw/Spaghetti-Carbonara.jpg",
-      "short_description": "Classic Italian pasta dish with bacon, eggs, and cheese.",
-      "ingredients": ["400 g spaghetti", "200 g bacon", "4 eggs", "100 g grated Parmesan cheese"],
-      "preparing_time": "20 min",
-      "calories": "380 calories"
-    },
-    {
-      "recipe_id": 4,
-      "recipe_name": "Mango Avocado Salad",
-      "recipe_image": "https://i.ibb.co/37xY0cs/Mango-Avocado-and-Black-Bean-Salad.jpg",
-      "short_description": "A refreshing and colorful salad with mangoes and avocados.",
-      "ingredients": ["2 ripe mangoes", "2 avocados", "100 g mixed greens", "50 g almonds"],
-      "preparing_time": "15 min",
-      "calories": "250 calories"
-    },
-    {
-      "recipe_id": 5,
-      "recipe_name": "Grilled Salmon with Lemon Herb Sauce",
-      "recipe_image": "https://i.ibb.co/bWtHwff/Grilled-Salmon-with-Lemon-Herb-Sauce.jpg",
-      "short_description": "Juicy grilled salmon fillets served with a zesty lemon herb sauce.",
-      "ingredients": ["4 salmon fillets", "1 lemon", "2 cloves garlic", "50 g fresh herbs"],
-      "preparing_time": "20 min",
-      "calories": "280 calories"
-    },
-    {
-      "recipe_id": 6,
-      "recipe_name": "Banana Chocolate Chip Muffins",
-      "recipe_image": "https://i.ibb.co/W3yRPR0/Banana-Chocolate-Chip-Muffins.jpg",
-      "short_description": "Moist and delicious muffins packed with bananas and chocolate chips.",
-      "ingredients": ["3 ripe bananas", "200 g flour", "100 g chocolate chips", "50 g sugar"],
-      "preparing_time": "35 min",
-      "calories": "200 calories"
-    }
-  ]
-  
+  {
+    "recipe_id": 1,
+    "recipe_name": "Grilled Chicken Teriyaki",
+    "recipe_image": "https://i.ibb.co/bdt1CVH/grilled-chicken-teriyaki-rice-gray-background-generated-ai-653623-3792.jpg",
+    "short_description": "Delicious grilled chicken marinated in teriyaki sauce.",
+    "ingredients": [
+      "550g chicken",
+      "120ml soy sauce",
+      "200g basil leaf",
+      "400g mushroom"
+    ],
+    "preparing_time": "30 min",
+    "calories": "320 calories"
+  },
+  {
+    "recipe_id": 2,
+    "recipe_name": "Vegetable Stir-Fry",
+    "recipe_image": "https://i.ibb.co/vhPM7Kv/Vegetable-Stir-Fry.jpg",
+    "short_description": "A healthy and flavorful mix of fresh vegetables.",
+    "ingredients": [
+      "300g broccoli",
+      "200g carrots",
+      "150g bell peppers",
+      "100g snap peas"
+    ],
+    "preparing_time": "25 min",
+    "calories": "180 calories"
+  },
+  {
+    "recipe_id": 3,
+    "recipe_name": "Spaghetti Carbonara",
+    "recipe_image": "https://i.ibb.co/B3FgFNw/Spaghetti-Carbonara.jpg",
+    "short_description": "Classic Italian pasta dish with bacon, eggs, and cheese.",
+    "ingredients": [
+      "400g spaghetti",
+      "200g bacon",
+      "4 eggs",
+      "100g grated Parmesan cheese"
+    ],
+    "preparing_time": "20 min",
+    "calories": "380 calories"
+  },
+  {
+    "recipe_id": 4,
+    "recipe_name": "Mango Avocado Salad",
+    "recipe_image": "https://i.ibb.co/37xY0cs/Mango-Avocado-and-Black-Bean-Salad.jpg",
+    "short_description": "A refreshing and colorful salad with mangoes and avocados.",
+    "ingredients": [
+      "2 ripe mangoes",
+      "2 avocados",
+      "100g mixed greens",
+      "50g almonds"
+    ],
+    "preparing_time": "15 min",
+    "calories": "250 calories"
+  },
+  {
+    "recipe_id": 5,
+    "recipe_name": "Grilled Salmon with Lemon Herb Sauce",
+    "recipe_image": "https://i.ibb.co/bWtHwff/Grilled-Salmon-with-Lemon-Herb-Sauce.jpg",
+    "short_description": "Juicy grilled salmon fillets served with a zesty lemon herb sauce.",
+    "ingredients": [
+      "4 salmon fillets",
+      "1 lemon",
+      "2 cloves garlic",
+      "50g fresh herbs"
+    ],
+    "preparing_time": "20 min",
+    "calories": "280 calories"
+  },
+  {
+    "recipe_id": 6,
+    "recipe_name": "Banana Chocolate Chip Muffins",
+    "recipe_image": "https://i.ibb.co/W3yRPR0/Banana-Chocolate-Chip-Muffins.jpg",
+    "short_description": "Moist and delicious muffins packed with bananas and chocolate chips.",
+    "ingredients": [
+      "3 ripe bananas",
+      "200g flour",
+      "100g chocolate chips",
+      "50g sugar"
+    ],
+    "preparing_time": "35 min",
+    "calories": "200 calories"
+  }
+]
