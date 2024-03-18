@@ -28,7 +28,7 @@ const RecipesCard = ({ recipe, handleCart }) => {
           <hr className="mt-[24px]" />
           <div className="">
             <h3 className="text-[18px] text-[#282828] mb-[16px]">
-              Ingredients: 4
+              Ingredients: {ingredients.length}
             </h3>
             <h3>
               {ingredients.map((ingredient, idx) => (
