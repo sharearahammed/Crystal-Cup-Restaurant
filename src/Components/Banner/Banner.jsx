@@ -12,9 +12,11 @@ const Banner = () => {
           <br /> each bite a symphony of flavors that delight the senses.{" "}
         </p>
         <div className="flex justify-center items-center gap-[30px] mb-5 lg:mb-0">
-          <button className="btn btn-accent lg:w-[195px] lg:h-[64px] rounded-[100px] lg:text-[20px] font-bold">
-            Explore Now
-          </button>
+          <a href="#ourRecipes">
+            <button className="btn btn-accent lg:w-[195px] lg:h-[64px] rounded-[100px] lg:text-[20px] font-bold">
+              Explore Now
+            </button>
+          </a>
           <button className="btn btn-outline lg:w-[195px] lg:h-[64px] border-white text-white rounded-[100px] lg:text-[20px] font-bold">
             Our Feedback
           </button>
