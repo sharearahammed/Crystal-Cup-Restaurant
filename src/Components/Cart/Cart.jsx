@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 
 const Cart = ({ index, cart, handleCurrentCart }) => {
   const { recipe_name, preparing_time, calories, recipe_id } = cart;
+
   //   const {idx} = index;
   return (
     <>

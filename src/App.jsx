@@ -14,6 +14,7 @@ import Footer from "./Components/Footer/Footer";
 function App() {
   const [carts, setCarts] = useState([]);
 
+
   const handleCart = (recipe) => {
     // console.log("add cart",recipe);
     const newCart = [...carts, recipe];
@@ -102,6 +103,10 @@ function App() {
                         current={current}
                       ></CurrentCookingCart>
                     ))}
+                  </div>
+                  <div className="mt-5 flex justify-end items-center gap-5">
+                    <h1>Total Time = <br/>{currentCart.reduce((p,c)=>p+parseInt(c.preparing_time.slice(0, 2)),0)} <span>minutes</span></h1>
+                    <h1>Total Calories = <br/>{currentCart.reduce((p,c)=>p+parseInt(c.calories.replace("calories","").trim()),0)} calories</h1>
                   </div>
                 </table>
               </div>
