@@ -2,7 +2,7 @@ import "./Banner.css";
 
 const Banner = () => {
   return (
-    <div className="mt-6 lg:mt-[54px] p-5 lg:p-0 background bg-cover h-[371px] w-auto lg:h-[636px] lg:w-[1400px] flex flex-col justify-center items-center">
+    <div data-aos="zoom-out" className="mt-6 lg:mt-[54px] p-5 lg:p-0 background bg-cover h-[371px] w-auto lg:h-[636px] lg:w-[1400px] flex flex-col justify-center items-center">
       <div className="text-center">
         <h1 className="mt-5 lg:mt-0 mb-[24px] text-[22px] lg:text-[52px] text-[#FFFFFF] font-bold">
           Discover an exceptional cooking <br /> class tailored for you!

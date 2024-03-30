@@ -17,20 +17,39 @@ const RecipesCard = ({ recipe, handleCart }) => {
       <div className="card lg:w-96 bg-base-100 shadow-xl border-2 border-b-slate-700 p-5">
         <figure>
           <img
+            data-aos="zoom-in"
+            data-aos-duration="1000"
             className="lg:h-[200px] lg:w-[331px] rounded-lg"
             src={recipe_image}
             alt="Shoes"
           />
         </figure>
         <div className="card-body">
-          <h2 className="card-title mb-[16px]">{recipe_name}</h2>
-          <p className="text-[#878787]">{short_description}</p>
+          <h2
+            data-aos="zoom-in-right"
+            data-aos-duration="1000"
+            className="card-title mb-[16px]"
+          >
+            {recipe_name}
+          </h2>
+          <p data-aos="zoom-in-right"
+            data-aos-duration="1000"
+            data-aos-delay="1000"
+            className="text-[#878787]"
+          >
+            {short_description}
+          </p>
           <hr className="mt-[24px]" />
           <div className="">
-            <h3 className="text-[18px] text-[#282828] mb-[16px]">
+            <h3 data-aos="zoom-in-right"
+            data-aos-duration="1000"
+            data-aos-delay="1100"
+             className="text-[18px] text-[#282828] mb-[16px]">
               Ingredients: {ingredients.length}
             </h3>
-            <h3>
+            <h3 data-aos="zoom-in-right"
+            data-aos-duration="1000"
+            data-aos-delay="1200">
               {ingredients.map((ingredient, idx) => (
                 <Ingredient key={idx} ingredient={ingredient}></Ingredient>
               ))}
